@@ -30,7 +30,12 @@
     "lessons": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::lesson.lesson",
+      "target": "api::lesson.lesson"
+    },
+    "exercises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise",
       "mappedBy": "section"
     }
   }

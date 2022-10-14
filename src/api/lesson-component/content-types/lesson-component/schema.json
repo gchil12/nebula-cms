@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_components",
+  "info": {
+    "singularName": "lesson-component",
+    "pluralName": "lesson-components",
+    "displayName": "LessonComponent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Video",
+        "Note",
+        "Quiz"
+      ]
+    },
+    "VideoURL": {
+      "type": "string"
+    },
+    "Note": {
+      "type": "richtext"
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz.quiz"
+    }
+  }
+}

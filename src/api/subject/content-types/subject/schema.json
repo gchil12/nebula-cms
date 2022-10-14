@@ -20,6 +20,12 @@
       "relation": "oneToMany",
       "target": "api::topic.topic",
       "mappedBy": "subject"
+    },
+    "MonthlyFee": {
+      "type": "biginteger"
+    },
+    "Free": {
+      "type": "boolean"
     }
   }
 }

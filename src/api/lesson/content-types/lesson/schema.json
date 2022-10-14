@@ -15,39 +15,6 @@
     "name": {
       "type": "string"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "VIDEO",
-        "TEXT"
-      ]
-    },
-    "questions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::question.question"
-    },
-    "note": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::note.note",
-      "inversedBy": "lesson"
-    },
-    "quiz": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::quiz.quiz",
-      "inversedBy": "lesson"
-    },
-    "video": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::video.video",
-      "inversedBy": "lesson"
-    },
-    "grade": {
-      "type": "integer"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -59,11 +26,19 @@
         "audios"
       ]
     },
-    "section": {
+    "Minutes": {
+      "type": "biginteger"
+    },
+    "lesson_components": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::section.section",
-      "inversedBy": "lessons"
+      "relation": "oneToMany",
+      "target": "api::lesson-component.lesson-component"
+    },
+    "exercises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise",
+      "mappedBy": "lesson"
     }
   }
 }

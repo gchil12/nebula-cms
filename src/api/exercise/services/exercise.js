@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * note service.
+ * exercise service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::note.note');
+module.exports = createCoreService('api::exercise.exercise');

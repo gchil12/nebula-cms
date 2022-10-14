@@ -4,7 +4,8 @@
   "info": {
     "singularName": "exam",
     "pluralName": "exams",
-    "displayName": "Exam"
+    "displayName": "Exam(!)",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

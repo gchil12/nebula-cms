@@ -1,24 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "questions",
+  "collectionName": "exercises",
   "info": {
-    "singularName": "question",
-    "pluralName": "questions",
-    "displayName": "QuizQuestion",
-    "description": ""
+    "singularName": "exercise",
+    "pluralName": "exercises",
+    "displayName": "Exercise"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
-    "questionFormat": {
+    "exerciseFormat": {
       "type": "enumeration",
       "enum": [
-        "MULTIPLE_CHOICE",
+        "MULTIPLE CHOICE",
         "OPEN"
       ]
     },
@@ -30,8 +29,15 @@
     },
     "section": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::section.section"
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "exercises"
+    },
+    "lesson": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lesson.lesson",
+      "inversedBy": "exercises"
     },
     "body": {
       "type": "richtext"

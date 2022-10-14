@@ -20,6 +20,19 @@
       "relation": "manyToMany",
       "target": "api::section.section",
       "mappedBy": "teachers"
+    },
+    "Picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Biography": {
+      "type": "richtext"
     }
   }
 }
