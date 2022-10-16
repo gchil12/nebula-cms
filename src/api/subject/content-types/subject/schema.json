@@ -18,8 +18,7 @@
     "topics": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::topic.topic",
-      "mappedBy": "subject"
+      "target": "api::topic.topic"
     },
     "MonthlyFee": {
       "type": "biginteger"

@@ -15,17 +15,10 @@
     "name": {
       "type": "string"
     },
-    "subject": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::subject.subject",
-      "inversedBy": "topics"
-    },
     "sections": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::section.section",
-      "mappedBy": "topic"
+      "target": "api::section.section"
     }
   }
 }

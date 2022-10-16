@@ -21,12 +21,6 @@
       "target": "api::teacher.teacher",
       "inversedBy": "sections"
     },
-    "topic": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::topic.topic",
-      "inversedBy": "sections"
-    },
     "lessons": {
       "type": "relation",
       "relation": "oneToMany",

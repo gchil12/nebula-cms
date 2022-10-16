@@ -33,12 +33,6 @@
       "target": "api::section.section",
       "inversedBy": "exercises"
     },
-    "lesson": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::lesson.lesson",
-      "inversedBy": "exercises"
-    },
     "body": {
       "type": "richtext"
     },

@@ -37,8 +37,7 @@
     "exercises": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::exercise.exercise",
-      "mappedBy": "lesson"
+      "target": "api::exercise.exercise"
     }
   }
 }
